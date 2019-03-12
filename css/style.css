@@ -61,6 +61,12 @@ h5 {
 
 }
 
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  width: 100%;
+}
 
 .date-text {
   font-style: italic;
