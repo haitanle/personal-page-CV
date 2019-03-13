@@ -148,3 +148,25 @@ let jobs = [
 
 
 
+
+let jobVar = [
+HTMLworkEmployer,
+HTMLworkTitle,
+HTMLworkDates,
+HTMLworkLocation,
+HTMLworkDescription
+];
+
+
+let jobKey = Object.keys(jobs[0]); 
+
+htmlString = '';
+
+for(let x = 0; x < jobs.length; x++){
+	for( let i = 0; i < jobVar.length; i++){
+		htmlString += jobVar[i].replace("%data%", jobs[x][jobKey[i]]);
+	}
+}
+
+
+$("#workExperience").append(htmlString);
