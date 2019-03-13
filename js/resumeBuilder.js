@@ -34,16 +34,16 @@ $("#header").append(htmlString);
 let education = {
 	schools: [
 	{
-		name: 'University of North Carolina-Chapel Hill',
-		degree: 'BS Sociology',
-		dates: '2006-2010',
-		location: 'Chapel Hill, NC'
-	},
-	{
 		name: 'University of North Carolina-Charlotte',
 		degree: 'MS Computer Science',
 		dates: '2013-2015',
 		location: 'Charlotte, NC'
+	},
+	{
+		name: 'University of North Carolina-Chapel Hill',
+		degree: 'BS Sociology',
+		dates: '2006-2010',
+		location: 'Chapel Hill, NC'
 	}
 	],
 	onlineCourses: [
@@ -99,7 +99,52 @@ for(let x = 0; x < education.onlineCourses.length; x++){
 }
 
 
-
 $("#education .education-entry").append(htmlString);
+
+
+
+let jobs = [
+	{
+		employer: 'Premier Inc',
+		title: 'Software Engineer',
+		location: 'Charlotte, NC',
+		dates: 'Aug 2014 - Nov 2018',
+		description: "Work in Full Stack development with Hadoop (Impala, Hive), Spring, Kafka, database \
+						design and modeling, SQL functions and procedures. \
+						Streamline successfully 10 datasets implementation Java, SQL, Bash. \
+						Oversee file-ingestion application from design, implementation, and maintenance."
+
+	},
+	{
+		employer: 'Premier Inc',
+		title: 'Software Intern',
+		location: 'Charlotte, NC',
+		dates: 'Jun 2014 - Aug 2014',
+		description: " Implemented automation deployment to allow for central location of control and instant \
+						status update of deployment process. \
+						Produced documentation and trained 3 team leads on automation process. \
+						Executed data cleaning, analysis, and visualization on Big Data health record."
+	},
+	{
+		employer: 'Geeks-N-Things',
+		title: 'Computer Repair Technician',
+		location: 'Charlotte, NC',
+		dates: 'Mar 2013 - Dec 2014',
+				description: "Diagnose and debug computers/laptops' hardware problems. \
+								Build and deploy operating system images for refurbished resell. \
+								Repair and replace computer's hardware."
+	},
+	{
+		employer: 'Siemens',
+		title: 'Intern',
+		location: 'Charlotte, NC',
+		dates: 'Jun 2012 - Jul 2012',
+				description: "Assisted engineers with data collection for turbine construction. \
+								Learned to properly use measurement and calibration tools. \
+								Performed evaluation and checks of turbine's components in final assembly."
+	}
+
+]
+
 
 

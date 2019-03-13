@@ -110,6 +110,11 @@ a {
   display: none;
 }
 
+.education-entry h3{
+  margin-top: 30px;
+  padding: 0;
+}
+
 .orange {
   background-color: #f5ae23;
 }
