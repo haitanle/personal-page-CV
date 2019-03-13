@@ -76,8 +76,28 @@ for(let x = 0; x < education.schools.length; x++){
 		htmlString += schoolVariables[i].replace("%data%", education.schools[x][schoolsKey[i]]);
 		
 	}
-	console.log(htmlString);
 }
+
+
+var schoolOnlineVar = 
+[
+HTMLonlineTitle,
+HTMLonlineSchool,
+HTMLonlineDates,
+HTMLonlineURL
+];
+
+
+schoolsKey = Object.keys(education['onlineCourses'][0]); 
+
+
+for(let x = 0; x < education.onlineCourses.length; x++){
+	for( let i = 0; i < schoolOnlineVar.length; i++){
+		htmlString += schoolOnlineVar[i].replace("%data%", education.onlineCourses[x][schoolsKey[i]]);
+		
+	}
+}
+
 
 
 $("#education .education-entry").append(htmlString);
