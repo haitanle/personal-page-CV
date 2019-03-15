@@ -109,4 +109,16 @@ let projects = [
 ];
 
 
-  $('#mapDiv').append(map);
+// Marker limit 10 TODO
+
+let travel = [
+'Boston',
+'New York',
+'Hanoi, Viet Nam',
+'Saigon, Viet Nam',
+'Cairns, Australia',
+'Sydney, Australia',
+'Monterrey, Mexico',
+'Los Angeles, CA',
+'San Francisco, CA'
+];

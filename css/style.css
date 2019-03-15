@@ -69,6 +69,11 @@ h5 {
   width: 100%;
 }
 
+.contact li {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
 .date-text {
   font-style: italic;
   font-size: 14px;
