@@ -90,3 +90,28 @@ for(let x = 0; x < jobs.length; x++){
 
 
 $("#workExperience").append(htmlString);
+
+
+
+
+let projectVar = [
+HTMLprojectTitle,
+HTMLprojectDates,
+HTMLprojectDescription,
+HTMLprojectImage
+];
+
+
+let projectKey = Object.keys(projects[0]);
+htmlString = '';
+
+for(let x = 0; x < projects.length; x++){
+	for( let i = 0; i < projectVar.length; i++){
+		htmlString += projectVar[i].replace("%data%", projects[x][projectKey[i]]);
+	}
+}
+
+
+$("#projects").append(htmlString);
+
+

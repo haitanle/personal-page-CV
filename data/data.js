@@ -85,3 +85,25 @@ let jobs = [
 	}
 
 ];
+
+
+let projects = [
+	{
+		title: 'Restaturant Review',
+		dates: 'March 2019',
+		description: 'Project to create a responsive, offline first website for restaurant reviews.',
+		images: 'images/197x148.gif'
+	},
+	{
+		title: 'Matching Game',
+		dates: 'December 2018',
+		description: 'Project to create a fun game to guess and match soccer players.',
+		images: 'images/197x148.gif'
+	}, 
+	{
+		title: 'Unit Testing',
+		dates: 'January 2019',
+		description: 'Project to create unit tests using Jasmine Framework.',
+		images: 'images/197x148.gif'
+	}
+];
