@@ -107,3 +107,6 @@ let projects = [
 		images: 'images/197x148.gif'
 	}
 ];
+
+
+  $('#mapDiv').append(map);

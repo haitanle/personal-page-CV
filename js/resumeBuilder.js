@@ -115,3 +115,6 @@ for(let x = 0; x < projects.length; x++){
 $("#projects").append(htmlString);
 
 
+
+
+$('#mapDiv').append(map);
