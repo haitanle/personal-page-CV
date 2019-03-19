@@ -8,7 +8,7 @@ var bioKeys = Object.keys(bio);
 
 let htmlString = '';
 for( let i = 0; i < bioVariables.length; i++){
-	htmlString += bioVariables[i].replace("%data%", bio[bioKeys[i]]);
+	htmlString += bioVariables[i].replace(/%data%/g, bio[bioKeys[i]]);
 	
 }
 
