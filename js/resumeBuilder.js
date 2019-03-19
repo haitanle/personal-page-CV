@@ -1,8 +1,9 @@
 
 
 //bioVariables used from helper.js that we will use 
-var bioVariables = [HTMLheaderName, HTMLheaderRole, HTMLmobile, HTMLemail, HTMLgithub, HTMLblog,HTMLlocation, HTMLbioPic,
-HTMLwelcomeMsg,HTMLskills];
+var bioVariables = [HTMLheaderName, HTMLheaderRole, HTMLmobile, HTMLemail, 
+HTMLgithub, HTMLblog,HTMLlocation, HTMLbioPic
+];
 
 var bioKeys = Object.keys(bio);
 
@@ -12,10 +13,15 @@ for( let i = 0; i < bioVariables.length; i++){
 	
 }
 
+$("#header").prepend(htmlString);
 
-$("#header").append(htmlString);
 
+htmlString = '';
+for( let i = 0; i < bio.skills.length; i++){
+	htmlString += HTMLskills.replace(/%data%/g, bio.skills[i]);
+}
 
+$("#skills").append(htmlString);
 
 
 
