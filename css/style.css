@@ -25,6 +25,10 @@ h6 {
   padding: 0 5%;
 }
 
+.project-entry img {
+  height: 240px;
+}
+
 h1 {
   font-size: 40px;
   color: #f5a623;
