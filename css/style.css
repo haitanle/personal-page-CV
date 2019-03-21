@@ -29,6 +29,12 @@ h6 {
   height: 240px;
 }
 
+.game-link {
+  color: #e8b200;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 40px;
   color: #f5a623;
