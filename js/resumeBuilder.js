@@ -104,6 +104,7 @@ let projectVar = [
 HTMLprojectTitle,
 HTMLprojectDates,
 HTMLprojectDescription,
+HTMLprojectLink,
 HTMLprojectImage
 ];
 
@@ -113,7 +114,10 @@ htmlString = '';
 
 for(let x = 0; x < projects.length; x++){
 	for( let i = 0; i < projectVar.length; i++){
-		htmlString += projectVar[i].replace("%data%", projects[x][projectKey[i]]);
+		debugger
+		if(projects[x][projectKey[i]] != ''){
+			htmlString += projectVar[i].replace("%data%", projects[x][projectKey[i]]);
+		}
 	}
 }
 
